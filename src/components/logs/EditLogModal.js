@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 
-export const AddLogModal = () => {
+export const EditLogModal = () => {
   const [message, setMessage] = useState("");
   const [tech, setTech] = useState("");
   const [attention, setAttention] = useState(false);
@@ -19,7 +19,7 @@ export const AddLogModal = () => {
   };
 
   return (
-    <div id="add-log-modal" className="modal" style={modalStyle}>
+    <div id="edit-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
         <h4>Enter System Log</h4>
         <div className="row">
